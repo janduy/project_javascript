@@ -1,10 +1,16 @@
 axios.get('https://api.github.com/users/janduy')
    .then(function(response) {
-       console.log(response);
+        console.log(response.data.avatar_url);
+
+        // Teste carregando minha imagem do avatar via JS
+        // var meuAvatar = document.createElement("IMG")
+        // meuAvatar.src = response.data.avatar_url;
+        // document.body.appendChild(meuAvatar);
    })
    .catch(function(error) {
        console.warn(error);
    });
+
 
 
 // var xhr = new XMLHttpRequest();
